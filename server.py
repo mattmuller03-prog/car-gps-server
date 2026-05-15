@@ -90,7 +90,7 @@ def map_page():
                             const lon = info.lon;
 
                             // Convert timestamp to milliseconds
-                            const lastUpdate = new Date(info.timestamp).getTime();
+                            const lastUpdate = new Date(info.timestamp + "Z").getTime();
                             const ageSeconds = (now - lastUpdate) / 1000;
 
                             // Choose marker color
